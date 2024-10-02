@@ -10,7 +10,8 @@
     "prepare": "husky install",
     "lint": "eslint src/**",
     "lint:fix": "eslint --fix src/**",
-    "prettier": "prettier --write src/**/*.ts"
+    "prettier": "prettier --write .",
+    "swagger:generate": "npx swagger-typescript-api -p ./swagger.json -o src/api -n api-types.ts"
   },
   "keywords": [],
   "author": "",
@@ -47,6 +48,7 @@
     "nodemon": "^3.1.7",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
+    "swagger-typescript-api": "^13.0.22",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
   }
