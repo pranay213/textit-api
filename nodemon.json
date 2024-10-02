@@ -1,9 +1,7 @@
 {
-    "watch": [
-        "src/**/*"
-    ],
-    "ext": "ts,json",
-    "exec": "ts-node src/server.ts",
-    "delay": "2500",
-    "verbose": true
+  "watch": ["src/**/*"],
+  "ext": "ts,json",
+  "exec": "ts-node src/server.ts",
+  "delay": "2500",
+  "verbose": true
 }

@@ -1,59 +1,57 @@
 {
-    "swagger": "2.0",
-    "info": {
-        "version": "1.0.0",
-        "title": "Node Express Socket API",
-        "description": "API documentation for your project"
-    },
-    "host": "localhost:5000",
-    "basePath": "/api",
-    "schemes": [
-        "http"
-    ],
-    "paths": {
-        "/users": {
-            "get": {
-                "summary": "Get users",
-                "responses": {
-                    "200": {
-                        "description": "OK"
-                    }
-                }
-            },
-            "post": {
-                "summary": "Create a user",
-                "parameters": [
-                    {
-                        "name": "user",
-                        "in": "body",
-                        "required": true,
-                        "schema": {
-                            "$ref": "#/definitions/User"
-                        }
-                    }
-                ],
-                "responses": {
-                    "201": {
-                        "description": "Created"
-                    }
-                }
-            }
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Node Express Socket API",
+    "description": "API documentation for your project"
+  },
+  "host": "localhost:5000",
+  "basePath": "/api",
+  "schemes": ["http"],
+  "paths": {
+    "/users": {
+      "get": {
+        "summary": "Get users",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
         }
-    },
-    "definitions": {
-        "User": {
-            "type": "object",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "email": {
-                    "type": "string"
-                },
-                "password": {
-                    "type": "string"
-                }
+      },
+      "post": {
+        "summary": "Create a user",
+        "parameters": [
+          {
+            "name": "user",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
             }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
         }
+      }
     }
+  },
+  "definitions": {
+    "User": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      }
+    }
+  }
 }
